@@ -8,13 +8,13 @@ import java.util.stream.Collectors;
 public class StudentenVerzeichnis {
     private static final List<Student> students = new ArrayList<>();
 
-    public Optional<Student> HolenSieSichDenNamenDesSchulers(String namen) {
+    public Optional<Student> holenSieSichDenNamenDesSchulers(String namen) {
         return students.stream()
                 .filter(s -> namen.equals(s.getName()))
                 .findFirst();
     }
 
-    public List<Student> HolenSieSichStudentenNachFakultat(String facultat) {
+    public List<Student> holenSieSichStudentenNachFakultat(String facultat) {
         return students.stream()
                 .filter(s -> facultat.equals(s.getFaculty()))
                 .collect(Collectors.toList());

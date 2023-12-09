@@ -5,19 +5,19 @@ import java.util.Optional;
 
 public class StudentDaoImpl implements StudentDao {
 
-    private final StudentenVerzeichnis studentManager;
+    private final StudentenVerzeichnis studentRepository;
 
-    public StudentDaoImpl(StudentenVerzeichnis studentManager) {
-        this.studentManager = studentManager;
+    public StudentDaoImpl(StudentenVerzeichnis studentRepository) {
+        this.studentRepository = studentRepository;
     }
 
     @Override
     public Optional<Student> getStudentByName(String name) {
-        return studentManager.HolenSieSichDenNamenDesSchulers(name);
+        return studentRepository.holenSieSichDenNamenDesSchulers(name);
     }
 
     @Override
     public List<Student> getStudentByFaculty(String faculty) {
-        return studentManager.HolenSieSichStudentenNachFakultat(faculty);
+        return studentRepository.holenSieSichStudentenNachFakultat(faculty);
     }
 }

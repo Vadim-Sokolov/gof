@@ -5,6 +5,10 @@ import gof.structural.bridge.dish.*;
 public class Kitchen {
 
     public Dish cookDish(Dish dish) throws RestaurantException {
+        if (dish == null) {
+            throw new RestaurantException("Dish can not be null");
+        }
+
         if (dish.getClass().equals(Soup.class)) {
             return cookSoup((Soup) dish);
         }

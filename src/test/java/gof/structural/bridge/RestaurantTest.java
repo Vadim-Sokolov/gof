@@ -53,4 +53,18 @@ class RestaurantTest {
             super(name);
         }
     }
+
+    @Test
+    void whenDishIsNull_shouldThrowException() {
+        // GIVEN
+        var expected = "Dish can not be null";
+
+        // WHEN
+        RestaurantException thrown = Assertions.assertThrows(RestaurantException.class, () -> {
+            restaurant.cook(null);
+        });
+
+        // THEN
+        Assertions.assertEquals(expected, thrown.getMessage());
+    }
 }

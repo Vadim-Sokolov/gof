@@ -22,7 +22,7 @@ class KitchenTest {
         var expectedCost = 6.0;
 
         // WHEN
-        var actual = kitchen.cookPizza(new ArrayList<ToppingDecorator>(List.of(
+        var actual = kitchen.cookPizza(new ArrayList<>(List.of(
                 new Bacon(new PlainPizza()), new Mushrooms(new PlainPizza()), new Mozzarella(new PlainPizza()))));
 
         // THEN

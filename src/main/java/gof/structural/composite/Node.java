@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Node implements Element {
 
-    private List<Element> children;
+    private final List<Element> children;
     private int index;
 
     public Node(List<Element> children, int index) {

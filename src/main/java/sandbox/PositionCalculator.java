@@ -1,8 +1,5 @@
 package sandbox;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class PositionCalculator {
 
     private static final String RUN = "run";

@@ -1,21 +1,18 @@
 package sandbox;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Runner {
 
+    private static final Map<Character, Integer> LETTER_IS_KEY_MAP = Map.of(
+            'a', 1, 'b', 2, 'c', 3, 'd', 4,	'e', 5,	'f', 6,	'g', 7,	'h', 8);
+
     public static void main(String[] args) {
-        int number = 17;
-        long factorial = calculateFactorial(number);
-        System.out.println("Factorial of " + number + " is: " + factorial);
+
+        System.out.println(LETTER_IS_KEY_MAP.get('a'));
+
     }
 
-    public static long calculateFactorial(int n) {
-        // Base case: factorial of 0 is 1
-        if (n == 0) {
-            return 1;
-        }
-        // Recursive case: n! = n * (n-1)!
-        else {
-            return n * calculateFactorial(n - 1);
-        }
-    }
+
 }

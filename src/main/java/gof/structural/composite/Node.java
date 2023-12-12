@@ -26,15 +26,7 @@ public class Node implements Element {
         return children;
     }
 
-    public void setChildren(List<Element> children) {
-        this.children = children;
-    }
-
     public int getIndex() {
         return index;
-    }
-
-    public void setIndex(int index) {
-        this.index = index;
     }
 }

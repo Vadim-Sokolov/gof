@@ -1,7 +1,5 @@
 package gof.structural.flyweight.model;
 
-import gof.structural.flyweight.model.Unit;
-
 import java.util.List;
 
 public interface Brigade<T extends Unit> {

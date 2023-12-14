@@ -1,7 +1,6 @@
 package gof.structural.flyweight.controller;
 
 import gof.structural.flyweight.model.Unit;
-import gof.structural.flyweight.model.unit.Soldier;
 
 import java.util.List;
 

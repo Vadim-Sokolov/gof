@@ -4,7 +4,7 @@ import gof.behavioural.chainofresponsibility.model.EmergencyService;
 
 public abstract class EmergencyRequestHandler implements Handler {
 
-    private Handler next;
+    private final Handler next;
 
     public EmergencyRequestHandler(EmergencyRequestHandler next) {
         this.next = next;

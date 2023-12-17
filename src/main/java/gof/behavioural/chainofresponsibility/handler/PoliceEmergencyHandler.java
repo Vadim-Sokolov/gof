@@ -6,7 +6,6 @@ import gof.behavioural.chainofresponsibility.model.PoliceService;
 public class PoliceEmergencyHandler extends EmergencyRequestHandler {
 
     private static final String POLICE_EMERGENCY = "Police emergency";
-    private Handler next;
 
     public PoliceEmergencyHandler(Handler next) {
         super((EmergencyRequestHandler) next);

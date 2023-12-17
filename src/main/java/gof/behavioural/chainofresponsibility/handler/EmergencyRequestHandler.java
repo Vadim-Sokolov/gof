@@ -19,9 +19,4 @@ public abstract class EmergencyRequestHandler implements Handler {
         }
         return next.handleEmergencyRequest(request);
     }
-
-    public Handler setNextHandler(Handler next) {
-        this.next = next;
-        return next;
-    }
 }

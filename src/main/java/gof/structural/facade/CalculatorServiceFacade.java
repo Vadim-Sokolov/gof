@@ -43,7 +43,7 @@ public class CalculatorServiceFacade {
         );
 
         // Get the response from the server
-        HttpStatus statusCode = responseEntity.getStatusCode();
+        HttpStatus statusCode = (HttpStatus) responseEntity.getStatusCode();
         System.out.println("Response Code: " + statusCode);
 
         return "Request sent successfully";

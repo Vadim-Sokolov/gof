@@ -2,12 +2,9 @@ package gof.behavioural.state;
 
 import gof.behavioural.state.state.OvenState;
 import gof.behavioural.state.state.Ready;
-import gof.behavioural.state.state.TooCold;
-import gof.behavioural.state.state.TooHot;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
 class PizzaOvenTest {

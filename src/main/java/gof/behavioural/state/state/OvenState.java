@@ -1,7 +1,6 @@
 package gof.behavioural.state.state;
 
 import gof.behavioural.state.OvenException;
-import gof.behavioural.state.PizzaOven;
 
 public interface OvenState {
 

@@ -3,13 +3,19 @@ package gof.behavioural.visitor;
 import gof.behavioural.visitor.visitable.Bacon;
 import gof.behavioural.visitor.visitable.Cheese;
 import gof.behavioural.visitor.visitable.Mushrooms;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PizzaCookTest {
 
-    private final PizzaCook pizzaCook = new PizzaCook();
+    private PizzaCook pizzaCook;
+
+    @BeforeEach
+    void setUp() {
+        pizzaCook = new PizzaCook();
+    }
 
     @Test
     void shouldContainOnlyBacon() {
